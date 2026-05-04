@@ -1,26 +1,5 @@
-# dependencies
-node_modules/
-
-# env files
-.env
-.env.*
-
-# build files
-dist/
-build/
 .next/
-
-# logs
-*.log
-
-# OS
-.DS_Store
-Thumbs.db
-
-# IDE
-.vscode/
-.idea/
-
-# temp
-*.tmp
-.cache/
+node_modules/
+.env.local
+.env
+out/
