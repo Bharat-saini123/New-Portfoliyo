@@ -25,7 +25,12 @@ export default function AiChat() {
     if (!greeted) {
       setGreeted(true);
       setTimeout(() => {
-        setMessages([{ role: "bot", text: "👋 Hi! I'm Bharat's AI assistant. Ask me about his skills, projects, experience, or anything else!" }]);
+        setMessages([
+          {
+            role: "bot",
+            text: "👋 Hi! I'm Bharat's AI assistant. Ask me about his skills, projects, experience, or anything else!",
+          },
+        ]);
       }, 300);
     }
   };
@@ -39,7 +44,10 @@ export default function AiChat() {
     const newMessages: Message[] = [...messages, { role: "user", text }];
     setMessages(newMessages);
 
-    const history = newMessages.map((m) => ({ role: m.role === "bot" ? "assistant" : "user", content: m.text }));
+    const history = newMessages.map((m) => ({
+      role: m.role === "bot" ? "assistant" : "user",
+      content: m.text,
+    }));
 
     try {
       const res = await fetch("/api/chat", {
@@ -48,9 +56,15 @@ export default function AiChat() {
         body: JSON.stringify({ messages: history }),
       });
       const data = await res.json();
-      setMessages((p) => [...p, { role: "bot", text: data.reply || "Sorry, no response." }]);
+      setMessages((p) => [
+        ...p,
+        { role: "bot", text: data.reply || "Sorry, no response." },
+      ]);
     } catch {
-      setMessages((p) => [...p, { role: "bot", text: "⚠️ Something went wrong. Please try again!" }]);
+      setMessages((p) => [
+        ...p,
+        { role: "bot", text: "⚠️ Something went wrong. Please try again!" },
+      ]);
     }
 
     setLoading(false);
@@ -72,7 +86,11 @@ export default function AiChat() {
 
   return (
     <>
-      <button className="ai-toggle" onClick={handleToggle} title="Chat with AI about Bharat">
+      <button
+        className="ai-toggle"
+        onClick={handleToggle}
+        title="Chat with AI about Bharat"
+      >
         🤖
         <span className="ai-badge" />
       </button>
@@ -87,17 +105,31 @@ export default function AiChat() {
               Online — Ask me anything
             </p>
           </div>
-          <button className="ai-close" onClick={() => setIsOpen(false)}>✕</button>
+          <button className="ai-close" onClick={() => setIsOpen(false)}>
+            ✕
+          </button>
         </div>
 
         <div className="ai-messages">
           {messages.map((m, i) => (
-            <div key={i} className={`msg ${m.role}`}>{m.text}</div>
+            <div
+              key={i}
+              className={`msg ${m.role}`}
+              style={{
+                whiteSpace: "pre-line",
+                wordBreak: "break-word",
+                overflowWrap: "anywhere",
+              }}
+            >
+              {m.text}
+            </div>
           ))}
           {loading && (
             <div className="msg bot">
               <span className="typing-dots">
-                <span /><span /><span />
+                <span />
+                <span />
+                <span />
               </span>
             </div>
           )}
@@ -107,7 +139,11 @@ export default function AiChat() {
         {showQuick && (
           <div className="quick-btns">
             {quickQuestions.map((q) => (
-              <button key={q.q} className="quick-btn" onClick={() => sendMessage(q.q)}>
+              <button
+                key={q.q}
+                className="quick-btn"
+                onClick={() => sendMessage(q.q)}
+              >
                 {q.label}
               </button>
             ))}
@@ -124,7 +160,13 @@ export default function AiChat() {
             onKeyDown={handleKeyDown}
             rows={1}
           />
-          <button className="ai-send" onClick={() => sendMessage(input)} disabled={loading}>➤</button>
+          <button
+            className="ai-send"
+            onClick={() => sendMessage(input)}
+            disabled={loading}
+          >
+            ➤
+          </button>
         </div>
       </div>
     </>
