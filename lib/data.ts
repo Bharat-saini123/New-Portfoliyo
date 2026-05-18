@@ -29,7 +29,7 @@ export const experiences = [
   {
     title: "Full Stack Developer",
     company: "GK Next Digital Solutions",
-    date: "May 2024 — May 2026",
+    date: "May 2024 — Present",
     points: [
       "Developed and optimized a real estate CRM system using MERN Stack.",
       "Integrated tRPC in Next.js API for seamless type-safe communication.",

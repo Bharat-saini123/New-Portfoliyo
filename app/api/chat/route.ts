@@ -20,7 +20,7 @@ Skills:
 - DevOps & Cloud: Docker, Kubernetes, AWS S3, Grafana, Git/GitHub, TurboRepo, Vercel
 
 Work Experience:
-1. Full Stack Developer — GK Next Digital Solutions (May 2024 — May 2026)
+1. Full Stack Developer — GK Next Digital Solutions (May 2024 — Present)
    - Developed and optimized a real estate CRM system using MERN Stack
    - Integrated tRPC in Next.js API for seamless type-safe communication
    - Implemented file uploads using FormData & AWS S3 for secure cloud storage
