@@ -68,7 +68,7 @@ export default function Home() {
               <div className="buttons">
                 <a href="#projects" className="btn primary">View Projects</a>
                 <a href="#contact" className="btn secondary">Hire Me</a>
-                <a href="https://drive.google.com/file/d/1lYGWfXSGoX0wxVAKSH1u5DzDth_A1nBP/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="btn secondary">Download Resume</a>
+                <a href="https://drive.google.com/file/d/1ltb5zvkALOofql9JzLzycdv-hJV1Pdk0/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="btn secondary">Download Resume</a>
                 <a href="tel:+918570915006" className="btn secondary">Call Me</a>
                 <a href="https://github.com/Bharat-saini123" target="_blank" rel="noopener noreferrer" className="btn secondary">GitHub ↗</a>
                 <a href="https://www.linkedin.com/in/bharat-saini-146412273/" target="_blank" rel="noopener noreferrer" className="btn secondary">LinkedIn ↗</a>
@@ -210,7 +210,7 @@ export default function Home() {
               <div className="buttons" style={{ justifyContent: "center", marginTop: 28 }}>
                 <a href="mailto:sainibharat277@gmail.com" className="btn primary">Email Me</a>
                 <a href="tel:+918570915006" className="btn secondary">Call Me</a>
-                <a href="https://drive.google.com/file/d/1lYGWfXSGoX0wxVAKSH1u5DzDth_A1nBP/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="btn secondary">Download Resume</a>
+                <a href="https://drive.google.com/file/d/1ltb5zvkALOofql9JzLzycdv-hJV1Pdk0/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="btn secondary">Download Resume</a>
                 <a href="https://github.com/Bharat-saini123" target="_blank" rel="noopener noreferrer" className="btn secondary">GitHub</a>
                 <a href="https://www.linkedin.com/in/bharat-saini-146412273/" target="_blank" rel="noopener noreferrer" className="btn secondary">LinkedIn</a>
               </div>
@@ -222,7 +222,7 @@ export default function Home() {
             Narnaul, Haryana, 123001 ·{" "}
             <a href="mailto:sainibharat277@gmail.com">Email</a> ·{" "}
             <a href="tel:+918570915006">Phone</a> ·{" "}
-            <a href="https://drive.google.com/file/d/1lYGWfXSGoX0wxVAKSH1u5DzDth_A1nBP/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
+            <a href="https://drive.google.com/file/d/1ltb5zvkALOofql9JzLzycdv-hJV1Pdk0/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
           </footer>
         </main>
       </div>
