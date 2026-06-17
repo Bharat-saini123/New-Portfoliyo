@@ -3,7 +3,7 @@ import TiltCard from "@/components/TiltCard";
 import RevealOnScroll from "@/components/RevealOnScroll";
 import AiChat from "@/components/AiChat";
 import { skills, experiences, projects } from "@/lib/data";
-
+import Image from "next/image";
 export default function Home() {
   return (
     <>
@@ -13,9 +13,19 @@ export default function Home() {
         {/* ── SIDEBAR ── */}
         <aside>
           <div className="profile">
-            <div className="avatar">👨‍💻</div>
+            <div className="avatar" style={{ position: "relative" }}>
+              <Image
+                src="/user.png"
+                alt="Bharat Saini"
+                fill
+                style={{ objectFit: "cover", borderRadius: "inherit" }}
+              />
+            </div>
             <h2>Bharat Saini</h2>
-            <p>Full Stack Developer building scalable real-time and cloud-ready web apps.</p>
+            <p>
+              Full Stack Developer building scalable real-time and cloud-ready
+              web apps.
+            </p>
             <div className="status">
               <span className="dot" />
               Available
@@ -44,8 +54,11 @@ export default function Home() {
               </h1>
               <p>
                 Crafting scalable systems with{" "}
-                <b>React, Next.js, Node.js, PostgreSQL, MongoDB, Prisma, AWS S3</b>. Real-time
-                apps, cloud integrations, clean architecture and production-grade development.
+                <b>
+                  React, Next.js, Node.js, PostgreSQL, MongoDB, Prisma, AWS S3
+                </b>
+                . Real-time apps, cloud integrations, clean architecture and
+                production-grade development.
               </p>
 
               <div className="terminal">
@@ -56,22 +69,50 @@ export default function Home() {
                 </div>
                 <div className="terminal-code">
                   $ developer.name = <span>&quot;Bharat Saini&quot;</span>
-                  <br />
-                  $ stack = [<span>&quot;React&quot;</span>, <span>&quot;Next.js&quot;</span>,{" "}
-                  <span>&quot;Node.js&quot;</span>, <span>&quot;PostgreSQL&quot;</span>,{" "}
+                  <br />$ stack = [<span>&quot;React&quot;</span>,{" "}
+                  <span>&quot;Next.js&quot;</span>,{" "}
+                  <span>&quot;Node.js&quot;</span>,{" "}
+                  <span>&quot;PostgreSQL&quot;</span>,{" "}
                   <span>&quot;AWS&quot;</span>]
-                  <br />
-                  $ status = <span>&quot;Ready to build your next product&quot;</span>
+                  <br />$ status ={" "}
+                  <span>&quot;Ready to build your next product&quot;</span>
                 </div>
               </div>
 
               <div className="buttons">
-                <a href="#projects" className="btn primary">View Projects</a>
-                <a href="#contact" className="btn secondary">Hire Me</a>
-                <a href="https://drive.google.com/file/d/1ltb5zvkALOofql9JzLzycdv-hJV1Pdk0/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="btn secondary">Download Resume</a>
-                <a href="tel:+918570915006" className="btn secondary">Call Me</a>
-                <a href="https://github.com/Bharat-saini123" target="_blank" rel="noopener noreferrer" className="btn secondary">GitHub ↗</a>
-                <a href="https://www.linkedin.com/in/bharat-saini-146412273/" target="_blank" rel="noopener noreferrer" className="btn secondary">LinkedIn ↗</a>
+                <a href="#projects" className="btn primary">
+                  View Projects
+                </a>
+                <a href="#contact" className="btn secondary">
+                  Hire Me
+                </a>
+                <a
+                  href="https://drive.google.com/file/d/1ltb5zvkALOofql9JzLzycdv-hJV1Pdk0/view?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn secondary"
+                >
+                  Download Resume
+                </a>
+                <a href="tel:+918570915006" className="btn secondary">
+                  Call Me
+                </a>
+                <a
+                  href="https://github.com/Bharat-saini123"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn secondary"
+                >
+                  GitHub ↗
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/bharat-saini-146412273/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn secondary"
+                >
+                  LinkedIn ↗
+                </a>
               </div>
             </div>
 
@@ -83,7 +124,10 @@ export default function Home() {
             <RevealOnScroll className="section-head">
               <span>Skills</span>
               <h2>Skills &amp; Tech Stack</h2>
-              <p>30+ technologies across frontend, backend, databases, realtime systems and DevOps.</p>
+              <p>
+                30+ technologies across frontend, backend, databases, realtime
+                systems and DevOps.
+              </p>
             </RevealOnScroll>
 
             <div className="bento">
@@ -93,7 +137,9 @@ export default function Home() {
                   <h3>{skill.title}</h3>
                   <p>{skill.desc}</p>
                   <div className="skill-list">
-                    {skill.tags.map((tag) => <span key={tag}>{tag}</span>)}
+                    {skill.tags.map((tag) => (
+                      <span key={tag}>{tag}</span>
+                    ))}
                   </div>
                 </RevealOnScroll>
               ))}
@@ -105,7 +151,9 @@ export default function Home() {
             <RevealOnScroll className="section-head">
               <span>Experience</span>
               <h2>Work History</h2>
-              <p>3+ years shipping production-grade software at real companies.</p>
+              <p>
+                3+ years shipping production-grade software at real companies.
+              </p>
             </RevealOnScroll>
 
             <div className="timeline">
@@ -119,10 +167,14 @@ export default function Home() {
                     <div className="date">{exp.date}</div>
                   </div>
                   <ul className="bullets">
-                    {exp.points.map((pt, i) => <li key={i}>{pt}</li>)}
+                    {exp.points.map((pt, i) => (
+                      <li key={i}>{pt}</li>
+                    ))}
                   </ul>
                   <div className="skill-list">
-                    {exp.tags.map((tag) => <span key={tag}>{tag}</span>)}
+                    {exp.tags.map((tag) => (
+                      <span key={tag}>{tag}</span>
+                    ))}
                   </div>
                 </RevealOnScroll>
               ))}
@@ -134,22 +186,45 @@ export default function Home() {
             <RevealOnScroll className="section-head">
               <span>Projects</span>
               <h2>Featured Projects</h2>
-              <p>Real-time apps, full-stack products, business websites and modern UI projects.</p>
+              <p>
+                Real-time apps, full-stack products, business websites and
+                modern UI projects.
+              </p>
             </RevealOnScroll>
 
             <div className="bento">
               {projects.map((project, index) => (
                 <RevealOnScroll key={project.title} className="card wide">
-                  <div className="mini-title">PROJECT {String(index + 1).padStart(2, "0")}</div>
+                  <div className="mini-title">
+                    PROJECT {String(index + 1).padStart(2, "0")}
+                  </div>
                   <h3>{project.title}</h3>
-                  <p style={{ color: "#a5f3fc", marginBottom: 10 }}>{project.type}</p>
+                  <p style={{ color: "#a5f3fc", marginBottom: 10 }}>
+                    {project.type}
+                  </p>
                   <p>{project.desc}</p>
                   <div className="skill-list">
-                    {project.tags.map((tag) => <span key={tag}>{tag}</span>)}
+                    {project.tags.map((tag) => (
+                      <span key={tag}>{tag}</span>
+                    ))}
                   </div>
                   <div className="project-actions">
-                    <a href={project.live} target="_blank" rel="noopener noreferrer" className="btn secondary">Live ↗</a>
-                    <a href={project.code} target="_blank" rel="noopener noreferrer" className="btn primary">Code ↗</a>
+                    <a
+                      href={project.live}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn secondary"
+                    >
+                      Live ↗
+                    </a>
+                    <a
+                      href={project.code}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn primary"
+                    >
+                      Code ↗
+                    </a>
                   </div>
                 </RevealOnScroll>
               ))}
@@ -166,7 +241,10 @@ export default function Home() {
             <RevealOnScroll className="card full">
               <div className="icon">🎓</div>
               <h3>B.Tech — Electrical Engineering</h3>
-              <p>JC Bose University of Science &amp; Technology, YMCA — Faridabad, Haryana</p>
+              <p>
+                JC Bose University of Science &amp; Technology, YMCA —
+                Faridabad, Haryana
+              </p>
               <div className="skill-list">
                 <span>Graduated 2023</span>
                 <span>7.2 CGPA</span>
@@ -179,8 +257,9 @@ export default function Home() {
             <RevealOnScroll className="contact-section">
               <h2>Let&apos;s Build Something Extraordinary.</h2>
               <p>
-                Available for full-time roles, freelance projects and technical consultations.
-                Agar aapko web app, dashboard, CRM, e-commerce ya custom software chahiye, let&apos;s connect.
+                Available for full-time roles, freelance projects and technical
+                consultations. Agar aapko web app, dashboard, CRM, e-commerce ya
+                custom software chahiye, let&apos;s connect.
               </p>
 
               <div className="contact-info">
@@ -188,7 +267,9 @@ export default function Home() {
                   <span>📧</span>
                   <div>
                     <h4>Email</h4>
-                    <a href="mailto:sainibharat277@gmail.com">sainibharat277@gmail.com</a>
+                    <a href="mailto:sainibharat277@gmail.com">
+                      sainibharat277@gmail.com
+                    </a>
                   </div>
                 </div>
                 <div className="contact-info-card">
@@ -207,12 +288,43 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="buttons" style={{ justifyContent: "center", marginTop: 28 }}>
-                <a href="mailto:sainibharat277@gmail.com" className="btn primary">Email Me</a>
-                <a href="tel:+918570915006" className="btn secondary">Call Me</a>
-                <a href="https://drive.google.com/file/d/1ltb5zvkALOofql9JzLzycdv-hJV1Pdk0/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="btn secondary">Download Resume</a>
-                <a href="https://github.com/Bharat-saini123" target="_blank" rel="noopener noreferrer" className="btn secondary">GitHub</a>
-                <a href="https://www.linkedin.com/in/bharat-saini-146412273/" target="_blank" rel="noopener noreferrer" className="btn secondary">LinkedIn</a>
+              <div
+                className="buttons"
+                style={{ justifyContent: "center", marginTop: 28 }}
+              >
+                <a
+                  href="mailto:sainibharat277@gmail.com"
+                  className="btn primary"
+                >
+                  Email Me
+                </a>
+                <a href="tel:+918570915006" className="btn secondary">
+                  Call Me
+                </a>
+                <a
+                  href="https://drive.google.com/file/d/1ltb5zvkALOofql9JzLzycdv-hJV1Pdk0/view?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn secondary"
+                >
+                  Download Resume
+                </a>
+                <a
+                  href="https://github.com/Bharat-saini123"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn secondary"
+                >
+                  GitHub
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/bharat-saini-146412273/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn secondary"
+                >
+                  LinkedIn
+                </a>
               </div>
             </RevealOnScroll>
           </section>
@@ -222,7 +334,13 @@ export default function Home() {
             Narnaul, Haryana, 123001 ·{" "}
             <a href="mailto:sainibharat277@gmail.com">Email</a> ·{" "}
             <a href="tel:+918570915006">Phone</a> ·{" "}
-            <a href="https://drive.google.com/file/d/1ltb5zvkALOofql9JzLzycdv-hJV1Pdk0/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
+            <a
+              href="https://drive.google.com/file/d/1ltb5zvkALOofql9JzLzycdv-hJV1Pdk0/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Resume
+            </a>
           </footer>
         </main>
       </div>
