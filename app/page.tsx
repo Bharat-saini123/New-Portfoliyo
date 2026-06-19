@@ -87,7 +87,7 @@ export default function Home() {
                   Hire Me
                 </a>
                 <a
-                  href="https://drive.google.com/file/d/1ltb5zvkALOofql9JzLzycdv-hJV1Pdk0/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1wWz-KTmc53zXzEHCg8w7luTnO-cY0e3-/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn secondary"
@@ -302,7 +302,7 @@ export default function Home() {
                   Call Me
                 </a>
                 <a
-                  href="https://drive.google.com/file/d/1ltb5zvkALOofql9JzLzycdv-hJV1Pdk0/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1wWz-KTmc53zXzEHCg8w7luTnO-cY0e3-/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn secondary"
@@ -335,7 +335,7 @@ export default function Home() {
             <a href="mailto:sainibharat277@gmail.com">Email</a> ·{" "}
             <a href="tel:+918570915006">Phone</a> ·{" "}
             <a
-              href="https://drive.google.com/file/d/1ltb5zvkALOofql9JzLzycdv-hJV1Pdk0/view?usp=sharing"
+              href="https://drive.google.com/file/d/1wWz-KTmc53zXzEHCg8w7luTnO-cY0e3-/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >
