@@ -94,12 +94,12 @@ export const projects = [
     code: "https://github.com/Bharat-saini123/Chat-App",
   },
   {
-    title: "Fragrance E-Commerce App",
-    type: "Full-Stack Next.js Application",
-    desc: "Full-stack fragrance e-commerce platform using Next.js 14, TypeScript, Supabase, cart management and checkout flow.",
-    tags: ["Next.js 14", "TypeScript", "Supabase", "Tailwind CSS", "React Context", "Vercel"],
-    live: "https://fragrance-app-brown.vercel.app/",
-    code: "https://github.com/Bharat-saini123/fragrance-app",
+    title: "CollabDoc",
+    type: "Local-First Collaborative Document Editor",
+    desc: "Production-grade real-time collaborative document editor with offline-first architecture, CRDT-based conflict resolution (Yjs), granular version history, AI writing assistant (Groq/OpenAI), and role-based access control. Built with Next.js 16, Tiptap, Prisma and Supabase.",
+    tags: ["Next.js 16", "TypeScript", "Yjs", "CRDT", "Tiptap", "Prisma", "Supabase", "NextAuth.js v5", "Groq AI", "Tailwind CSS", "Vercel"],
+    live: "https://collab-doc-bice.vercel.app/",
+    code: "https://github.com/Bharat-saini123/collab-doc",
   },
   {
     title: "LUXE 3D Store",
