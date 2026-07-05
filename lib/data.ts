@@ -15,13 +15,13 @@ export const skills = [
     title: "Database & ORM",
     icon: "🗄️",
     desc: "Relational and NoSQL databases with optimized queries.",
-    tags: ["MongoDB", "PostgreSQL", "Prisma ORM", "Redis", "Firebase"],
+    tags: ["MongoDB", "PostgreSQL", "MySQL", "Supabase", "Prisma ORM", "Redis", "Firebase"],
   },
   {
     title: "DevOps & Cloud",
     icon: "☁️",
     desc: "Deployment, cloud storage, containers and monitoring.",
-    tags: ["Docker", "Kubernetes", "AWS S3", "Grafana", "Git / GitHub", "TurboRepo", "Vercel"],
+    tags: ["Docker", "Kubernetes", "AWS S3", "Grafana", "Git / GitHub", "TurboRepo", "Vercel", "Netlify", "Render"],
   },
 ];
 
