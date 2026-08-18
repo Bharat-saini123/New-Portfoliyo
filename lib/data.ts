@@ -69,14 +69,14 @@ export const projects = [
     live: "https://ai-code-reviewer-indol-kappa.vercel.app/",
     code: "https://github.com/Bharat-saini123/ai-code-reviewer",
   },
-  {
-    title: "Cricket Live",
-    type: "Real-time Cricket Data App",
-    desc: "Real-time cricket dashboard using Next.js and TypeScript with live APIs, scoreboards, player metadata and Vercel deployment.",
-    tags: ["Next.js", "TypeScript", "React", "Live API", "Vercel"],
-    live: "https://cricket-live-neon.vercel.app/",
-    code: "https://github.com/Bharat-saini123/CRICKET-LIVE",
-  },
+  // {
+  //   title: "Cricket Live",
+  //   type: "Real-time Cricket Data App",
+  //   desc: "Real-time cricket dashboard using Next.js and TypeScript with live APIs, scoreboards, player metadata and Vercel deployment.",
+  //   tags: ["Next.js", "TypeScript", "React", "Live API", "Vercel"],
+  //   live: "https://cricket-live-neon.vercel.app/",
+  //   code: "https://github.com/Bharat-saini123/CRICKET-LIVE",
+  // },
   {
     title: "Friend Tracker",
     type: "Real-time Location Tracking App",
