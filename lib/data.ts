@@ -109,4 +109,12 @@ export const projects = [
     live: "https://luxe-store-tau.vercel.app/",
     code: "https://github.com/Bharat-saini123/LUXE-store",
   },
+  {
+    title: "Interactive Car Assembly",
+    type: "Three.js 3D Experience",
+    desc: "An immersive Three.js experience where a car is assembled part by part across 24 interactive steps, turning a complex 3D model into an engaging guided walkthrough.",
+    tags: ["Three.js", "JavaScript", "3D Modeling", "Interactive Animation", "Vercel"],
+    live: "https://new-3d-task-car.vercel.app/",
+    code:"https://github.com/Bharat-saini123/new-3d-task-car"
+  },
 ];
