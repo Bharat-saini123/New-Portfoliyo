@@ -1215,6 +1215,32 @@ html[data-theme="day"] .hologram-card::after { background: radial-gradient(circl
 html[data-theme="day"] .hologram-card::before,
 html[data-theme="day"] .card::after { opacity: .2; }
 html[data-theme="day"] .contact-section { background: linear-gradient(145deg, #fff, #ededed); }
+html[data-theme="day"] .ai-panel { background: #fff; border-color: #ccc; color: #111; }
+html[data-theme="day"] .ai-header { background: #f4f4f4; border-bottom-color: #ddd; }
+html[data-theme="day"] .ai-info h4 { color: #111; }
+html[data-theme="day"] .ai-info p { color: #555; }
+html[data-theme="day"] .ai-close { color: #444; }
+html[data-theme="day"] .ai-close:hover { color: #000; }
+html[data-theme="day"] .ai-messages { scrollbar-color: #aaa transparent; }
+html[data-theme="day"] .ai-messages::-webkit-scrollbar-thumb { background: #aaa; }
+html[data-theme="day"] .msg.bot { color: #111; background: #f1f1f1; border-color: #ddd; }
+html[data-theme="day"] .msg.user { color: #fff; background: #111; border-color: #111; }
+html[data-theme="day"] .quick-btn {
+  color: #111;
+  background: #f1f1f1;
+  border-color: #c8c8c8;
+}
+html[data-theme="day"] .quick-btn:hover,
+html[data-theme="day"] .quick-btn:focus-visible {
+  color: #fff;
+  background: #111;
+  border-color: #111;
+}
+html[data-theme="day"] .typing-dots span { background: #333; }
+html[data-theme="day"] .ai-footer { border-top-color: #ddd; }
+html[data-theme="day"] .ai-input { color: #111; background: #f7f7f7; border-color: #ccc; }
+html[data-theme="day"] .ai-input::placeholder { color: #666; }
+html[data-theme="day"] .ai-send { color: #fff; background: #111; }
 html[data-theme="day"] main .theme-toggle { color: #fff; background: #111; border-color: #111; }
 html[data-theme="day"] main .theme-toggle span { color: #fff; }
 html[data-theme="day"] main .theme-toggle:hover,
