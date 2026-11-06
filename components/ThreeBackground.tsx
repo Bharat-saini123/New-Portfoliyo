@@ -29,20 +29,20 @@ export default function ThreeBackground() {
 
       const cube = new THREE.Mesh(
         new THREE.BoxGeometry(1.7, 1.7, 1.7),
-        new THREE.MeshStandardMaterial({ color: 0x22d3ee, metalness: 0.75, roughness: 0.18, wireframe: true }),
+        new THREE.MeshStandardMaterial({ color: 0xffffff, metalness: 0.45, roughness: 0.42, wireframe: true }),
       );
       cube.position.set(2.9, 0.65, 0);
       group.add(cube);
 
       const ringGeo = new THREE.TorusGeometry(1.35, 0.018, 16, 140);
-      const ringMat = new THREE.MeshBasicMaterial({ color: 0xa855f7, transparent: true, opacity: 0.72 });
+      const ringMat = new THREE.MeshBasicMaterial({ color: 0xcccccc, transparent: true, opacity: 0.24 });
       const ring1 = new THREE.Mesh(ringGeo, ringMat); ring1.position.copy(cube.position); group.add(ring1);
       const ring2 = new THREE.Mesh(ringGeo, ringMat); ring2.position.copy(cube.position); ring2.rotation.x = Math.PI / 2; group.add(ring2);
       const ring3 = new THREE.Mesh(ringGeo, ringMat); ring3.position.copy(cube.position); ring3.rotation.y = Math.PI / 2; group.add(ring3);
 
       const ico = new THREE.Mesh(
         new THREE.IcosahedronGeometry(1.1, 1),
-        new THREE.MeshStandardMaterial({ color: 0xec4899, metalness: 0.65, roughness: 0.24, wireframe: true }),
+        new THREE.MeshStandardMaterial({ color: 0x888888, metalness: 0.4, roughness: 0.48, wireframe: true }),
       );
       ico.position.set(-3.2, -1.4, -0.5);
       group.add(ico);
@@ -52,12 +52,12 @@ export default function ThreeBackground() {
       for (let i = 0; i < count * 3; i++) pos[i] = (Math.random() - 0.5) * 14;
       const particlesGeo = new THREE.BufferGeometry();
       particlesGeo.setAttribute("position", new THREE.BufferAttribute(pos, 3));
-      const particles = new THREE.Points(particlesGeo, new THREE.PointsMaterial({ size: 0.012, color: 0xe8e8d9, transparent: true, opacity: 0.48 }));
+      const particles = new THREE.Points(particlesGeo, new THREE.PointsMaterial({ size: 0.012, color: 0xeeeeee, transparent: true, opacity: 0.18 }));
       scene.add(particles);
 
       scene.add(new THREE.AmbientLight(0xffffff, 0.55));
-      const cL = new THREE.PointLight(0x22d3ee, 1.7); cL.position.set(4, 3, 5); scene.add(cL);
-      const pL = new THREE.PointLight(0xa855f7, 1.2); pL.position.set(-4, -3, 4); scene.add(pL);
+      const cL = new THREE.PointLight(0xffffff, 0.65); cL.position.set(4, 3, 5); scene.add(cL);
+      const pL = new THREE.PointLight(0xcccccc, 0.45); pL.position.set(-4, -3, 4); scene.add(pL);
 
       let mx = 0, my = 0;
       onMouse = (event: MouseEvent) => { mx = event.clientX / window.innerWidth - 0.5; my = event.clientY / window.innerHeight - 0.5; };

@@ -199,7 +199,7 @@ export default function Home() {
                     PROJECT {String(index + 1).padStart(2, "0")}
                   </div>
                   <h3>{project.title}</h3>
-                  <p style={{ color: "#a5f3fc", marginBottom: 10 }}>
+                  <p style={{ color: "#ececec", marginBottom: 10 }}>
                     {project.type}
                   </p>
                   <p>{project.desc}</p>
