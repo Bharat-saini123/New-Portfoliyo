@@ -2,6 +2,7 @@ import ThreeBackground from "@/components/ThreeBackground";
 import TiltCard from "@/components/TiltCard";
 import RevealOnScroll from "@/components/RevealOnScroll";
 import AiChat from "@/components/AiChat";
+import ThemeToggle from "@/components/ThemeToggle";
 import { skills, experiences, projects } from "@/lib/data";
 import Image from "next/image";
 export default function Home() {
@@ -42,6 +43,11 @@ export default function Home() {
 
         {/* ── MAIN ── */}
         <main>
+          <div className="topbar">
+            <span className="topbar-label">PORTFOLIO <i /> BLACK &amp; WHITE</span>
+            <ThemeToggle />
+          </div>
+
           {/* HERO */}
           <section className="hero" id="home">
             <div>
@@ -199,7 +205,7 @@ export default function Home() {
                     PROJECT {String(index + 1).padStart(2, "0")}
                   </div>
                   <h3>{project.title}</h3>
-                  <p style={{ color: "#ececec", marginBottom: 10 }}>
+                  <p className="project-type">
                     {project.type}
                   </p>
                   <p>{project.desc}</p>
